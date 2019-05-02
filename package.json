@@ -1,0 +1,14 @@
+{
+  "name": "shadow",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.8.35"
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "create-react-class": "15.6.3",
+    "co-editor": "1.0.0-alpha4"
+  }
+}

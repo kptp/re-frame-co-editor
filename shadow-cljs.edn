@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/cljs"
+  "src/clj"]
+
+ :dependencies
+ [[reagent "0.8.1"]
+  [re-frame "0.10.6"]
+  [pneumatic-tubes "0.3.0"]
+  [compojure "1.6.1"]
+  [ring "1.7.1"]]
+
+ :builds
+ {:frontend
+  {:target :browser
+   :modules {:main {:init-fn coop.frontend.core/init}}
+   :devtools {:http-root "public"
+              :http-port 8080}
+   :compiler-options {:output-feature-set :es6}
+   }}}
